@@ -1,6 +1,5 @@
 'use strict';
 
-const Evented = require('../../util/evented');
 const DOM = require('../../util/dom');
 
 /**
