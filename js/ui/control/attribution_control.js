@@ -12,10 +12,9 @@ const DOM = require('../../util/dom');
  * var map = new mapboxgl.Map({attributionControl: false})
  *     .addControl(new mapboxgl.AttributionControl({position: 'top-left'}));
  */
-class AttributionControl extends Evented {
+class AttributionControl {
 
     constructor(options) {
-        super();
         this._position = options && options.position || 'bottom-right';
     }
 
