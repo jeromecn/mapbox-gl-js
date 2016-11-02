@@ -144,7 +144,7 @@ class ImageSource extends Evented {
     }
 
     prepare() {
-        if (!this.tile || !this._loaded || !this.image || !this.image.complete) return;
+        if (!this.tile || !this._loaded || !this.image) return;
         this._prepareImage(this.map.painter.gl, this.image);
     }
 
