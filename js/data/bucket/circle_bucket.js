@@ -27,7 +27,6 @@ const circleInterface = {
         name: 'a_radius',
         components: 1,
         type: 'Uint16',
-        isLayerConstant: false,
         getValue: (layer, globalProperties, featureProperties) => {
             return [layer.getPaintValue("circle-radius", globalProperties, featureProperties)];
         },
@@ -37,7 +36,6 @@ const circleInterface = {
         name: 'a_blur',
         components: 1,
         type: 'Uint16',
-        isLayerConstant: false,
         getValue: (layer, globalProperties, featureProperties) => {
             return [layer.getPaintValue("circle-blur", globalProperties, featureProperties)];
         },
@@ -47,7 +45,6 @@ const circleInterface = {
         name: 'a_opacity',
         components: 1,
         type: 'Uint16',
-        isLayerConstant: false,
         getValue: (layer, globalProperties, featureProperties) => {
             return [layer.getPaintValue("circle-opacity", globalProperties, featureProperties)];
         },
